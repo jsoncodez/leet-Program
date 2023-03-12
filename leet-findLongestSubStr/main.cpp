@@ -24,8 +24,8 @@ public:
 	/****************************************************************************************************************
 	//Iterates through the index of start of substring and returns true or false.
 	// False indicates that the next character is repeated and therefore end of substring count for unique characters
-	// True returns back that the current substring accumulation can continue on.
-	// Skips any non lexical characters i.e. spaces and continues on the substring
+	// True validates continuation of unique substring and continues to accumilate current substring total length
+	// Skips any non lexical characters i.e. spaces and continues with same substring count
 	****************************************************************************************************************/
 	bool confirmUnique(string s, int startIdx, int endIdx) {
 
@@ -78,7 +78,6 @@ public:
 int main() {
 
 	/*
-
 	string myStr = "pwwkew";
 
 	string myStr = "abcdefghijklmnopqrstuvwxyzpwwkewasdfwefwefaioshjfaoijoaijfo";
