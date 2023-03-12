@@ -1,5 +1,5 @@
 /*
-//Author: jscodez
+//Author: jscdz
 //Date: 3/12/2023
 //Description:  Find Longest Substring.  Medium difficulty
 // Time complexity is O(n^3)
