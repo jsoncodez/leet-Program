@@ -32,7 +32,7 @@ public:
         int endIdx = nums.size() - 1;
 
         int midIdx = (startIdx + endIdx) / 2;
-
+ 
         while (startIdx <= endIdx) {
             midIdx = (startIdx + endIdx) / 2;
 
