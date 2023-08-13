@@ -24,17 +24,13 @@ public:
   
         int pivotIdx = n - k;
 
-
-         if (pivotIdx < 0) {
+        if (pivotIdx < 0) {
              pivotIdx = n - (k % n);
         }
-   
-      
+
         leftV.resize(pivotIdx);
 
-   
         nums.erase(nums.begin(), nums.begin()+(pivotIdx));
-
         nums.insert(nums.end(), leftV.begin(), leftV.end());
   
         disp(nums);
