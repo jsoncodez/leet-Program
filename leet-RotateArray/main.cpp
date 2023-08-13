@@ -25,15 +25,12 @@ public:
 
         leftV = nums;
  
-        int pivotIdx;
+        int pivotIdx = n - k;
 
- 
-        pivotIdx = n - k;
          if (pivotIdx < 0) {
              pivotIdx = n - (k % n);
         }
         
-       
         leftV.resize(pivotIdx);
         leftV.shrink_to_fit();
    
