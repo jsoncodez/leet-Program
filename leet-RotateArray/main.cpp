@@ -20,19 +20,18 @@ public:
     void rotate(vector<int>& nums, int k) {
 
         int n = nums.size();
-        vector<int> leftV(n);
-   
-
-        leftV = nums;
- 
+        vector<int> leftV = nums;
+  
         int pivotIdx = n - k;
+
 
          if (pivotIdx < 0) {
              pivotIdx = n - (k % n);
         }
-        
+   
+      
         leftV.resize(pivotIdx);
-        leftV.shrink_to_fit();
+
    
         nums.erase(nums.begin(), nums.begin()+(pivotIdx));
 
@@ -47,10 +46,10 @@ public:
 int main() {
     Solution solve;
 
-    vector<int> nums = { 1,2};
+    vector<int> nums = { 1,2,3,4,5,6,7};
     /*[5,6,7,1,2,3,4]*/
 //7
-    int k = 5;
+    int k = 3;
 
     solve.rotate(nums, k);
 
