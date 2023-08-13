@@ -28,24 +28,21 @@ public:
         
         while (j != -1) {
 
-
             tempWord = s.substr(0, j);
 
             stackWord.push(tempWord);
 
-            s = s.substr(j);
-       
+            s.erase(0, j);
 
             s = s.substr(s.find_first_not_of(" "));
-        
-
+ 
             j = s.find(" ");
             
         }
 
 
         while (!stackWord.empty()) {
-            cout << stackWord.top() << endl;
+     
             s += " " + stackWord.top();
             stackWord.pop();
         }
